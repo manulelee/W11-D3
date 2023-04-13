@@ -21,3 +21,18 @@
   position: absolute;
   bottom: 20px;
 }
+
+.article-details img {
+  min-width: 100%;
+  height: auto;
+}
+
+.article-details .card {
+  aspect-ratio: 1/1;
+  height: auto;
+  width: auto;
+  margin-bottom: 1em;
+}
+.article-details button {
+  position: relative;
+}
