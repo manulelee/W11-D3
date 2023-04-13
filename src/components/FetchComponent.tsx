@@ -5,19 +5,12 @@ import ErrorComponent from "./ErrorCompontent";
 import LoadingComponent from "./LoadingComponent";
 import Row from "react-bootstrap/Row";
 
-import { useParams } from "react-router-dom";
-
 const FetchComponent = () => {
   const [articles, setArticles] = useState<Article[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isError, setIsError] = useState<boolean>(false);
 
-  const params = useParams();
-
-  const endpoint =
-    params.id === undefined
-      ? `https://api.spaceflightnewsapi.net/v3/articles/`
-      : `https://api.spaceflightnewsapi.net/v3/articles/${params.id}`;
+  const endpoint = `https://api.spaceflightnewsapi.net/v3/articles/`;
 
   const FetchData = async () => {
     try {
