@@ -36,3 +36,7 @@
 .article-details button {
   position: relative;
 }
+
+.article-details .card {
+  margin: auto;
+}
